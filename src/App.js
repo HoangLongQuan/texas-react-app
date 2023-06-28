@@ -1,22 +1,15 @@
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
+  const name = "Texas";
+  const userName = "XYZM";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header UserName = {userName}/>
+      <div className='container'> {name} Exercise </div>
+      <Footer />
     </div>
   );
 }
